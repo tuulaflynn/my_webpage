@@ -6,45 +6,51 @@
 body {
     background: rgb(139, 172, 156);
     background: linear-gradient(90deg, rgba(139, 172, 156, 1) 25%, rgba(180, 194, 187, 1) 100%);
+    font-family: monospace;
+    font-size: large;
+    color: black;
 }
 
 h1 {
     font-size: 550%;
-    font-family: monospace;
-    color: black;
     text-align: left;
     padding: 5% 5%;
     margin: 1% 0;
 }
 
+
 #contact-details-table {
-    table-layout: right;
-    font-family: monospace;
     font-size: x-large;
-    margin: 4% 5%;
+    margin: 3% 5%;
 }
 
 #kickboxing_img {
     margin-left: 5%;
     margin-right: 5%;
-    background-image: url(kickboxing.JPG);
-    background-repeat: repeat-x;
-    /* width: 10%;
-    height: auto; */
 }
 
 p {
-    background-color: blue;
-    font-family: monospace;
-    font-size: large;
-    padding-top: 1%
+    background-color: rgb(75, 75, 229);
+    margin: 1.5% 4.5%;
+    padding: 0.5% 0.5%
 }
 
-/*table {
-    font-family: Courier New (monospace);
-    font-size: small;
+#container1 {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: auto auto auto 1fr;
+    min-height: 100vh;
+}
 
-}*/
-/*background-image: url("kickboxing.JPG");
-    background-repeat: repeat;
-    /*background-size: cover;*/
+@media (min-width:60em) {
+    #container1 {
+        grid-template-columns: 30em 1fr;
+        grid-template-rows: auto auto auto 1fr;
+    }
+}
+
+.container {
+    font-family: monospace;
+    margin: 2% 2%;
+    font-size: large;
+}
